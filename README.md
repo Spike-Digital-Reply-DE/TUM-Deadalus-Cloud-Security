@@ -263,7 +263,7 @@ pip install prowler
 2. **Run Prowler:** Run the scan. This can take 5-15 minutes.
 
 ```bash
-prowler aws
+prowler aws --region eu-central-1
 ```
 
 3. **Analyze the Report:** Prowler will create an HTML report in the `output` directory. Open it and filter for S3 findings. Tip: Look for resources that could potentially contain sensitive data.
