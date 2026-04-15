@@ -191,14 +191,14 @@ You need to provide your credentials to your repository's CI/CD pipeline.
 
 **Step 5: Test Your Application**
 
-1. Call the API URL with your bucket, that you both got from your workflow outputs, and also with your token, that you generated.
+1. Call the API URL with your bucket, that you both got from your workflow outputs.
 
 Replace the placeholders with your values.
 * `<your_api_endpoint>`: The URL you just copied.
 * `<your-bucket-name>`: The name of the bucket you created in your `s3.tf` file (e.g., `webapp-bucket-guava`).
 
 ```bash
-curl "https://<your_api_endpoint>/dev/<fruit>?bucket=<your-bucket-name>&file=fruitsalad.png" > fruitsalad.png
+curl "https://<your_api_endpoint>/dev/fruit?bucket=<your-bucket-name>&file=fruitsalad.png" > fruitsalad.png
 ```
 
 2. After running the command you should have a `fruitsalad.png` file in your directory.
