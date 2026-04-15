@@ -256,7 +256,7 @@ Now you will act as a security auditor to find misconfigurations.
 
 ```bash
 python3 -m venv prowler-env
-prowler-env/bin/activate
+source prowler-env/bin/activate
 pip install prowler
 ```
 
